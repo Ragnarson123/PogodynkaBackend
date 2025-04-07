@@ -79,11 +79,6 @@ app.post('/api/auth/login', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  next();
-});
 
 const apiKey = "d855022feded1934f8590f123da7b216";
 
