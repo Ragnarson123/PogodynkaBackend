@@ -26,7 +26,7 @@ const comparePassword = async (password, hashedPassword) => {
 };
 
 const generateToken = (userId) => {
-    return jwt.sign({ userId }, 'your-secret-key', { expiresIn: '1h' });
+    return jwt.sign({ userId }, 'secret-key', { expiresIn: '1h' });
 };
 
 // Routes
